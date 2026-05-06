@@ -14,6 +14,14 @@ This project demonstrates the implementation of a full-stack security monitoring
 
     Hypervisor: Oracle VirtualBox.
 ---
+## Networking Configuration
+To ensure a safe and contained testing environment, the lab utilized an isolated network topology:
+* **Network Type:** Host-Only Adapter (VirtualBox).
+* **Isolation:** All traffic was contained within the hypervisor, preventing any accidental exposure to the host machine or external internet.
+* **IP Addressing:** * Attacker: `10.0.2.4`
+  * Victim: `10.0.2.3`
+  * SIEM: `10.0.2.5`
+---
 ## Red Team Phase: The Exploit
 
 Objective: Gain unauthorized root access to the target via a known backdoor.
