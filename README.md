@@ -48,11 +48,21 @@ The value of this lab was the verification of the Security Pipeline.
 ---
 ## Technical Evidence
 
-(In GitHub repo, place images in an /assets folder and link here)
+### Lab Environment & Architecture
+![Lab VM Architecture](./assets/lab-vm-architecture.png)
+*Figure 1: Oracle VirtualBox orchestration showing the concurrent operation of Kali Linux (Attacker), Metasploitable (Victim), and Wazuh (SIEM).*
 
-    Red Team Success: Achieving root shell via Metasploit.
+### Red Team: Exploit Execution
+![Kali Metasploit Exploit](./assets/kali-metasploit-exploit.png)
+*Figure 2: Successful exploitation of the vsftpd 2.3.4 backdoor, resulting in a spawned root shell on the target system.*
 
-    Blue Team Monitoring: Wazuh Discover dashboard showing vsftpd activity and my custom pipeline watermark.
+### Blue Team: SIEM Telemetry & Log Ingestion
+![Wazuh Detection Dashboard](./assets/wazuh-detection-dashboard.png)
+*Figure 3: Wazuh dashboard capturing real-time service activity and system logs from the victim machine.*
+
+### Data Integrity Verification (Watermark)
+![Wazuh Log Verification](./assets/wazuh-log-verification.png)
+*Figure 4: Custom log injection verified within the Wazuh Discover tab, confirming end-to-end telemetry integrity.*
 ---
 ## Tech Stack
 
