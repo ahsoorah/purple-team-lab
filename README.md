@@ -63,6 +63,7 @@ The value of this lab was the verification of the Security Pipeline.
 ### Data Integrity Verification (Watermark)
 ![Wazuh Log Verification](./assets/wazuh-log-verification.png)
 *Figure 4: Custom log injection verified within the Wazuh Discover tab, confirming end-to-end telemetry integrity.*
+
 ---
 ## Tech Stack
 
