@@ -73,6 +73,12 @@ The value of this lab was the verification of the Security Pipeline.
 *Figure 4: Custom log injection verified within the Wazuh Discover tab, confirming end-to-end telemetry integrity.*
 
 ---
+## Lessons Learned & Future Improvements
+* **Detection Tuning:** While the exploit was successful, the next phase involves engineering specific **Wazuh Decoders** to automatically flag the unique "backdoor" string pattern in the FTP traffic.
+* **Persistence Testing:** Future iterations will include simulating "Living off the Land" (LotL) techniques to see if the SIEM can detect malicious activity that doesn't involve external malware.
+* **Log Enrichment:** I plan to integrate **Sysmon** on the victim side to provide deeper granularity into process creation and network connections.
+
+---
 ## Tech Stack
 
     SIEM: Wazuh (Elasticsearch/Filebeat/Kibana stack)
