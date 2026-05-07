@@ -32,6 +32,7 @@ Vulnerability: vsftpd 2.3.4 Backdoor Command Execution.
 Payload: cmd/unix/interact.
 
 Execution: I utilized Metasploit to target the victim at 10.0.2.3. By exploiting a backdoor in the FTP service, I successfully spawned a root shell, allowing for full system compromise.
+
 ---
 ## Blue Team Phase: Detection & SIEM Analysis
 
@@ -44,6 +45,7 @@ Detection Strategy: I executed a custom "Pipeline Test" by injecting a uniquely 
 SIEM Visualization: Verified that the Wazuh manager successfully parsed the log, categorized the event, and displayed the activity in the Discover dashboard.
 
 Incident Response: Identified the exploit attempt by monitoring for vsftpd service crashes and unexpected root-level shell spawns.
+
 ---
 ## The Purple Team Outcome
 
@@ -54,6 +56,7 @@ Attack: The Red Team established a point-to-point connection and achieved root.
 Telemetry: The Blue Team verified that the SIEM was not "blind" to the attack.
 
 Optimization: This lab provided the baseline for tuning Wazuh alerts to specifically flag vsftpd backdoor patterns and unauthorized sudo executions.
+
 ---
 ## Technical Evidence
 
