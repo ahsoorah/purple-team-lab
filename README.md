@@ -23,6 +23,7 @@ To ensure a safe and contained testing environment, the lab utilized an isolated
   * Attacker: `10.0.2.4`
   * Victim: `10.0.2.3`
   * SIEM: `10.0.2.5`
+  
 *Note: Network configuration was transitioned from NAT to Host-Only during the lab to facilitate direct point-to-point communication and service isolation.*
 
 ---
