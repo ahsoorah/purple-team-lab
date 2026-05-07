@@ -13,6 +13,7 @@ Red Team (Attacker): Kali Linux utilizing the Metasploit Framework.
 Target (Victim): Metasploitable 2 (Linux-based vulnerable VM).
 
 Hypervisor: Oracle VirtualBox.
+
 ---
 ## Networking Configuration
 To ensure a safe and contained testing environment, the lab utilized an isolated network topology:
